@@ -20,32 +20,36 @@
       padding-right: 10% !important;
     }
 
-    /* Tablet: logo + phone stack vertically, navbar ~130px tall */
+    /* Fix button text overflow: base rule has white-space:nowrap which causes overflow on mobile */
+    .button-14 {
+      white-space: normal !important;
+      word-break: break-word !important;
+    }
+
+    /* Tablet */
     @media screen and (max-width: 991px) {
       section {
         padding-left: 6% !important;
         padding-right: 6% !important;
       }
+      /* Navbar stacks to ~180px tall — push hero below it */
       .section-medium-44 {
-        padding-top: 9.5rem !important;
+        padding-top: 12rem !important;
       }
-      /* Shrink logo so navbar stays shorter */
-      .banner14_column img {
-        width: 72px !important;
+      .button-14 {
+        padding: 1rem 1.5rem !important;
+        text-align: center !important;
       }
     }
 
-    /* Mobile: tighter, navbar still stacked */
+    /* Mobile */
     @media screen and (max-width: 767px) {
       .section-medium-44 {
-        padding-top: 10rem !important;
+        padding-top: 13rem !important;
       }
-      /* Fix button text overflow — webflow sets 0.25rem horiz padding at this breakpoint */
       .button-14 {
         padding: 1rem 1.25rem !important;
-        width: 100% !important;
-        box-sizing: border-box !important;
-        text-align: center !important;
+        font-size: 1rem !important;
       }
     }
 
@@ -56,11 +60,11 @@
         padding-right: 4% !important;
       }
       .section-medium-44 {
-        padding-top: 10.5rem !important;
+        padding-top: 14rem !important;
       }
       .button-14 {
-        padding: 1rem 1rem !important;
-        font-size: 0.85rem !important;
+        padding: 0.875rem 1rem !important;
+        font-size: 0.9rem !important;
       }
     }
   </style>
