@@ -11,6 +11,25 @@
   <link href="css/webflow.css" rel="stylesheet" type="text/css">
   <link href="css/nathans-sublime-site-a33d-13fdba837d52e.webflow.css" rel="stylesheet" type="text/css">
   <style>html.w-mod-js:not(.w-mod-ix3) :is([gsap-scrub="target"], .text-highlight, [GSAP-fade="target"], .hero_phone-image, .hero_phone-accent-left, [gsap-eyebrow="target"], [GSAP-stagger-text="trigger"], [GSAP-image-parallax="target"]) {visibility: hidden !important;}</style>
+  <style>
+    /* Narrow all section content from ~100% to ~80% by increasing horizontal padding */
+    section {
+      padding-left: 10% !important;
+      padding-right: 10% !important;
+    }
+    @media screen and (max-width: 991px) {
+      section {
+        padding-left: 6% !important;
+        padding-right: 6% !important;
+      }
+    }
+    @media screen and (max-width: 479px) {
+      section {
+        padding-left: 4% !important;
+        padding-right: 4% !important;
+      }
+    }
+  </style>
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous">
   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
