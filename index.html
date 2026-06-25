@@ -12,24 +12,57 @@
   <link href="css/nathans-sublime-site-a33d-13fdba837d52e.webflow.css" rel="stylesheet" type="text/css">
   <style>html.w-mod-js:not(.w-mod-ix3) :is([gsap-scrub="target"], .text-highlight, [GSAP-fade="target"], .hero_phone-image, .hero_phone-accent-left, [gsap-eyebrow="target"], [GSAP-stagger-text="trigger"], [GSAP-image-parallax="target"]) {visibility: hidden !important;}</style>
   <style>
-    /* Narrow all section content from ~100% to ~80% by increasing horizontal padding */
+    html { scroll-behavior: smooth; }
+
+    /* Narrow all section content from ~100% to ~80% */
     section {
       padding-left: 10% !important;
       padding-right: 10% !important;
     }
+
+    /* Tablet: logo + phone stack vertically, navbar ~130px tall */
     @media screen and (max-width: 991px) {
       section {
         padding-left: 6% !important;
         padding-right: 6% !important;
       }
+      .section-medium-44 {
+        padding-top: 9.5rem !important;
+      }
+      /* Shrink logo so navbar stays shorter */
+      .banner14_column img {
+        width: 72px !important;
+      }
     }
+
+    /* Mobile: tighter, navbar still stacked */
+    @media screen and (max-width: 767px) {
+      .section-medium-44 {
+        padding-top: 10rem !important;
+      }
+      /* Fix button text overflow — webflow sets 0.25rem horiz padding at this breakpoint */
+      .button-14 {
+        padding: 1rem 1.25rem !important;
+        width: 100% !important;
+        box-sizing: border-box !important;
+        text-align: center !important;
+      }
+    }
+
+    /* Small mobile */
     @media screen and (max-width: 479px) {
       section {
         padding-left: 4% !important;
         padding-right: 4% !important;
       }
+      .section-medium-44 {
+        padding-top: 10.5rem !important;
+      }
+      .button-14 {
+        padding: 1rem 1rem !important;
+        font-size: 0.85rem !important;
+      }
     }
-      html { scroll-behavior: smooth; }
   </style>
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous">
